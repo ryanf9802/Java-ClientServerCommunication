@@ -38,7 +38,7 @@ public class Client {
                     var dataOutputStream = new DataOutputStream(outputStream);
 
                     while(true){
-                        System.out.print("Enter message to send to server (or 'dc' to exit): ");
+                        System.out.print("Enter command (or 'help'): ");
                         String msg = scanner.nextLine();
 
                         if("dc".equalsIgnoreCase(msg)){
@@ -58,4 +58,42 @@ public class Client {
             System.err.println("Connection could not be established");
         }
     }
+}
+
+class ClientCommandHandler{
+
+    public enum Command{
+        HELP{
+            @Override
+            public void execute(){
+
+            }
+        },
+
+        MSG{
+            @Override
+            public void execute(){
+
+            }
+        },
+
+        DC{
+            @Override
+            public void execute(){
+
+            }
+        };
+
+        public abstract void execute();
+    }
+
+    void executeString(String s){
+        switch(s.toUpperCase()){
+            case "HELP" -> Command.HELP.execute();
+
+        }
+    }
+
+    public static final String ANSI_CYAN = "\u001B[36m";
+    public static final String ANSI_RESET = "\u001B[0m";
 }
