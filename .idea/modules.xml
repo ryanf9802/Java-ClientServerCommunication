@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/FileTransfer/FileTransfer.iml" filepath="$PROJECT_DIR$/FileTransfer/FileTransfer.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Java-ClientServerCommunication.iml" filepath="$PROJECT_DIR$/.idea/Java-ClientServerCommunication.iml" />
       <module fileurl="file://$PROJECT_DIR$/TCPSocketMessenger/TCPSocketMessenger.iml" filepath="$PROJECT_DIR$/TCPSocketMessenger/TCPSocketMessenger.iml" />
     </modules>
